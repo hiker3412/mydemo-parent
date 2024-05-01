@@ -107,4 +107,17 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>nexus-release</name>
+            <url>http://192.168.168.170:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>nexus-snapshot</name>
+            <url>http://192.168.168.170:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
