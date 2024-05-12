@@ -109,12 +109,8 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>17</source>
-                    <target>17</target>
-                </configuration>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
@@ -123,12 +119,12 @@
         <repository>
             <id>nexus</id>
             <name>nexus-release</name>
-            <url>http://110.40.131.99:8081/repository/maven-releases/</url>
+            <url>http://hiker.vm:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
             <name>nexus-snapshot</name>
-            <url>http://110.40.131.99:8081/repository/maven-snapshots/</url>
+            <url>http://hiker.vm:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
