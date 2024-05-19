@@ -74,8 +74,14 @@
                 <artifactId>mydemo-server-api</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
+            <!--  =================test=========================== -->
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-test</artifactId>
+                <version>3.6.6</version>
+                <scope>test</scope>
+            </dependency>
             <!--  =================utils=========================== -->
-            <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-jakarta-spring-boot-starter -->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
@@ -119,12 +125,12 @@
         <repository>
             <id>nexus</id>
             <name>nexus-release</name>
-            <url>http://hiker.vm:8081/repository/maven-releases/</url>
+            <url>http://hiker.email:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
             <name>nexus-snapshot</name>
-            <url>http://hiker.vm:8081/repository/maven-snapshots/</url>
+            <url>http://hiker.email:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
